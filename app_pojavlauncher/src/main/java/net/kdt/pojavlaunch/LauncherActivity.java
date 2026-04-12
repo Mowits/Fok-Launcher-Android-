@@ -180,6 +180,7 @@ public class LauncherActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pojav_launcher);
+        applyFokRamAllocation();
         FragmentManager fragmentManager = getSupportFragmentManager();
         // If we don't have a back stack root yet...
         if(fragmentManager.getBackStackEntryCount() < 1) {
@@ -227,6 +228,14 @@ public class LauncherActivity extends BaseActivity {
         mProgressLayout.observe(ProgressLayout.INSTALL_MODPACK);
         mProgressLayout.observe(ProgressLayout.AUTHENTICATE_MICROSOFT);
         mProgressLayout.observe(ProgressLayout.DOWNLOAD_VERSION_LIST);
+    }
+
+    private void applyFokRamAllocation() {
+        int deviceRam = Tools.getTotalDeviceMemory(this);
+        int allocation = (int) Math.floor(deviceRam * 0.4f);
+        if (allocation < 512) allocation = 512;
+        LauncherPreferences.DEFAULT_PREF.edit().putInt("allocation", allocation).apply();
+        LauncherPreferences.PREF_RAM_ALLOCATION = allocation;
     }
 
     @Override

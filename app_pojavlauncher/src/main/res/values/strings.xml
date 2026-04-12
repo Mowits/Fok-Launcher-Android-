@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_name">PojavLauncher (Minecraft: Java Edition for Android)</string>
-    <string name="app_short_name">PojavLauncher</string>
+    <string name="app_name">Fok Launcher</string>
+    <string name="app_short_name">Fok Launcher</string>
 
     <!-- Action bar part -->
 
@@ -22,7 +22,7 @@
     <string name="alerttitle_installmod">Select a mod installer</string>
 
     <!-- Error messages -->
-    <string name="error_fatal">PojavLauncher has unexpectedly crashed</string>
+    <string name="error_fatal">Fok Launcher has unexpectedly crashed</string>
     <string name="error_no_version">No version!</string>
     <string name="error_show_more">Show more</string>
     <string name="error_show_less">Show less</string>
@@ -431,4 +431,27 @@
     <string name="bta_installer_nightly_versions">Nightly BTA versions</string>
     <string name="newdl_extracting_native_libraries">Extracting native libraries (%d/%d)</string>
     <string name="toast_not_available_demo">This is not available in demo mode</string>
+    <string name="fok_password_label">Password</string>
+    <string name="fok_password_missing_title">Password required</string>
+    <string name="fok_password_missing_text">Please enter your password</string>
+    <string name="fok_server_label">Server preset</string>
+    <string name="fok_server_edit">Edit server</string>
+    <string name="fok_server_edit_title">Edit server preset</string>
+    <string name="fok_server_name_label">Name</string>
+    <string name="fok_server_addr_label">Address</string>
+    <string name="fok_server_voice_label">Voice room</string>
+    <string name="fok_server_default_name">Preset %1$d</string>
+    <string name="fok_save">Save</string>
+    <string name="fok_cancel">Cancel</string>
+    <string name="fok_memory_label">Allocated memory</string>
+    <string name="fok_memory_placeholder">Calculating...</string>
+    <string name="fok_memory_format">%1$d MB (40%%) / %2$d MB total</string>
+    <string name="fok_layout_missing">Launcher layout is missing required FOK controls.</string>
+    <string name="fok_voice_button">Open voice</string>
+    <string name="fok_voice_opening">Opening FOK Voice room: %1$s</string>
+    <string name="fok_brand_title">Fok Launcher</string>
+    <string name="fok_brand_subtitle">Minimal offline entry for your server</string>
+    <string name="fok_login_caption">Username and password stay ready for auto join.</string>
+    <string name="fok_home_caption">Fast join, clean layout, seal mood.</string>
+    <string name="fok_tools_label">Tools</string>
 </resources>

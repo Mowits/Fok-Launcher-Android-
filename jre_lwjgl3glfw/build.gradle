@@ -24,9 +24,13 @@ jar {
 }
 
 java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(8)
-    }
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.fork = true
+    options.forkOptions.javaHome = file("/usr/lib/jvm/java-8-openjdk-amd64")
 }
 
 dependencies {

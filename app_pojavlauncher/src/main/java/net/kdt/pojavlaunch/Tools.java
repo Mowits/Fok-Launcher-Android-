@@ -66,6 +66,8 @@ import net.kdt.pojavlaunch.utils.JREUtils;
 import net.kdt.pojavlaunch.utils.JSONUtils;
 import net.kdt.pojavlaunch.utils.MCOptionUtils;
 import net.kdt.pojavlaunch.utils.OldVersionsUtils;
+import net.kdt.pojavlaunch.fok.FokPrefs;
+import net.kdt.pojavlaunch.fok.FokServerPreset;
 import net.kdt.pojavlaunch.value.DependentLibrary;
 import net.kdt.pojavlaunch.value.MinecraftAccount;
 import net.kdt.pojavlaunch.value.MinecraftLibraryArtifact;
@@ -101,7 +103,7 @@ import java.util.Map;
 public final class Tools {
     public  static final float BYTE_TO_MB = 1024 * 1024;
     public static final Handler MAIN_HANDLER = new Handler(Looper.getMainLooper());
-    public static String APP_NAME = "PojavLauncher";
+    public static String APP_NAME = "FOK";
 
     public static final Gson GLOBAL_GSON = new GsonBuilder().setPrettyPrinting().create();
 
@@ -514,6 +516,11 @@ public final class Tools {
                 versionInfo.minecraftArguments;
 
         if(profile.isDemo()) mcArguments += " --demo";
+
+        FokServerPreset preset = FokPrefs.getServerPreset(FokPrefs.getSelectedServerIndex());
+        if (preset != null && Tools.isValidString(preset.getAddress())) {
+            mcArguments += " --quickPlayMultiplayer " + preset.getAddress();
+        }
 
         return JSONUtils.insertJSONValueList(splitAndFilterEmpty(mcArguments), varArgMap);
     }
