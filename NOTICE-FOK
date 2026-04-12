@@ -1,0 +1,11 @@
+Fok Launcher Android licensing note
+
+This repository is a fork derived from the PojavLauncher Android codebase.
+
+- Existing upstream files remain under their original licenses.
+- The upstream license text remains in `LICENSE`.
+- New FOK-specific files and original FOK-only additions are accompanied by
+  `LICENSE-FOK-APACHE` for Apache License 2.0 terms.
+
+If a file is derived from upstream code, the upstream license obligations still
+apply to that file and its derivatives.
