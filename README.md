@@ -1,4 +1,4 @@
-# Fok Launcher Android
+7# Fok Launcher Android
 
 Fok Launcher, Android icin Pojav tabanli, optimize edilmis bir Minecraft Java launcher fork'udur.
 
@@ -42,3 +42,25 @@ Bu launcher Google’a kayıtlı değil. Eylül 2026’dan itibaren APK kurulumu
 Kurmak için advanced flow (24 saat bekleme + uyarılar) gerekebilir.
 Keep Android Open’ı destekliyoruz → https://keepandroidopen.org/tr/
 Kardeşlerim, direnelim!
+
+⚠️ WARNING – Google’s 2026 Rule
+
+This launcher is **NOT registered** with Google.
+
+Starting September 2026 (first in some countries, then worldwide in 2027), installing APKs from unverified developers will become much harder.
+
+To install it, users may need to go through the "Advanced Flow":
+- Enable Developer Options
+- Accept multiple scary warning screens
+- Restart the phone
+- **Wait 24 hours**
+- Confirm again with PIN/biometrics
+
+This is designed to be very discouraging. Most normal users will probably give up.
+
+We support **Keep Android Open** → https://keepandroidopen.org/
+
+Brothers, let’s resist!  
+Don’t let Google turn Android into a closed garden.
+
+If you manage to install it, enjoy the launcher and tell your friends to fight back too.
