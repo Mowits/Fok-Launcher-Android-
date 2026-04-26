@@ -36,3 +36,9 @@ Bu repo, orijinal Pojav Android kaynaklarinin FOK odakli fork'udur.
   `LICENSE-FOK-APACHE`
 - Upstream lisans dosyasi:
   `LICENSE`
+
+⚠️ DİKKAT – Google’ın 2026 Kuralı
+Bu launcher Google’a kayıtlı değil. Eylül 2026’dan itibaren APK kurulumu zorlaşacak.
+Kurmak için advanced flow (24 saat bekleme + uyarılar) gerekebilir.
+Keep Android Open’ı destekliyoruz → https://keepandroidopen.org/tr/
+Kardeşlerim, direnelim!
